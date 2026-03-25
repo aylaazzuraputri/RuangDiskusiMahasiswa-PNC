@@ -1,0 +1,31 @@
+Dalam repositori RuangDiskusiMahasiswa-PNC, konsep OOP diterapkan melalui pengggunaan class Mahasiswa, RuangDiskusi, dan Peminjaman sebagai repreesentasi objek nyata. Programm juga sudah menerapkan enkapsulasi dengan atribut dan method, serta pendekatan OOP lebih baik dibandingkan procedural karena memudahkan pengelolaan data, pemeliharaan, dan pengembangan system.
+
+1. Penerapan Class dan Object
+- Class Mahasiswa untuk merepresentasikan data mahasiswa (nim, nama, jurusan, email)
+- Class RuangDiskusi untuk merepresentasikan runag diskusi dengan atribut (idRuang, namaRuang, kapasitas, status)
+- Class Peminjaman untuk menghubungkan mahasiswa dengan ruang diskusi, menyimpan informasi peminjaman (tanggal, Waktu mulai, Waktu selesai)
+
+2. Penerapan Enkapsulasi 
+- Atribut dalam class disimpan sebagai private, lalu diakses melalui method public
+- Contohnya pada class Mahasiswa
+
+private String nim;
+private String nama;
+private String jurusan;
+
+public String getNama() {
+    return nama;
+}
+
+- Dengan enkapsulasi, data mahasiswa tidak bisa diubah sembarangan dari luar class, sehingga lebih aman dan terstruktur
+
+3. Keunggulan PBO dibandingkan Prosedural
+
+-Modularitas: Setiap class berdiri sendiri, sehingga mudah dikembangkan tanpa mengganggu bagian lain.
+-Reusability: Class bisa digunakan kembali di program lain tanpa perlu menulis ulang.
+-Maintainability: Perubahan hanya dilakukan pada class terkait, tidak perlu mengubah seluruh kode.
+-Representasi dunia nyata: Mahasiswa, ruang diskusi, dan peminjaman direpresentasikan sebagai objek, sehingga lebih mudah dipahami.
+-Lebih scalable: Sistem bisa diperluas (misalnya menambah fitur jadwal, validasi email, atau kapasitas ruang) tanpa harus menulis ulang logika utama.
+
+Kesimpulan
+Class & Object digunakan untuk merepresentasikan entitas nyata (Mahasiswa, RuangDiskusi, Peminjaman). Enkapsulasi melindungi data dengan atribut private dan method public. PBO lebih baik karena modular, reusable, mudah dipelihara, dan sesuai dengan konsep dunia nyata.
