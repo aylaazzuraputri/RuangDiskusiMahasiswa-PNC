@@ -1,0 +1,26 @@
+Bagian 1 – Analisis Sistem
+
+| Class        | Atribut                                                                 | Method                                                                 |
+|--------------|-------------------------------------------------------------------------|------------------------------------------------------------------------|
+| Mahasiswa    | nim, nama, jurusan, email                                               | tampilkanData(), ajukanPeminjaman(), lihatStatusPeminjaman()           |
+| RuangDiskusi | idRuang, namaRuang, kapasitas, status (tersedia/dipinjam)               | tampilkanInfoRuang(), ubahStatus(), cekKetersediaan()                  |
+| Peminjaman   | idPeminjaman, tanggal, waktuMulai, waktuSelesai, statusPeminjaman, mahasiswa, ruangDiskusi | buatPeminjaman(), batalkanPeminjaman(), tampilkanDetailPeminjaman()    |
+
+#Alasan Pemilihan Atribut dan Method
+
+- Mahasiswa  
+  - Atribut `nim`, `nama`, `jurusan`, `email` dipilih untuk identifikasi mahasiswa secara unik dan lengkap.  
+  - Method `tampilkanData()` digunakan untuk menampilkan profil mahasiswa, `ajukanPeminjaman()` untuk melakukan peminjaman, dan `lihatStatusPeminjaman()` agar mahasiswa bisa memantau status peminjaman.  
+
+- RuangDiskusi 
+  - Atribut `idRuang`, `namaRuang`, `kapasitas`, `status` dipilih karena setiap ruang memiliki identitas, kapasitas berbeda, dan status yang harus dipantau.  
+  - Method `tampilkanInfoRuang()` menampilkan detail ruang, `ubahStatus()` mengubah kondisi ruang, dan `cekKetersediaan()` memastikan ruang bisa dipinjam.  
+
+- Peminjaman  
+  - Atribut `idPeminjaman`, `tanggal`, `waktuMulai`, `waktuSelesai`, `statusPeminjaman`, `mahasiswa`, `ruangDiskusi` dipilih untuk mencatat detail transaksi peminjaman.  
+  - Method `buatPeminjaman()` membuat transaksi baru, `batalkanPeminjaman()` membatalkan transaksi, dan `tampilkanDetailPeminjaman()` menampilkan informasi lengkap peminjaman.  
+
+# Hubungan Antar Class
+- Mahasiswa melakukan Peminjaman terhadap RuangDiskusi.  
+- Peminjaman menghubungkan Mahasiswa dengan RuangDiskusi.  
+- Status RuangDiskusi berubah sesuai dengan adanya Peminjaman.
